@@ -1,0 +1,25 @@
+Reflexões sobre o curso de GIT e GITHUB
+
+1- como a visualização de um diff dos arquivos de duas versões pode ajudar a descobrir um bug que foi introduzido ?
+Através do comando diff é possivel ver todas as linhas que foram alteradas no codigo de forma rápida e resumida. 
+Dessa forma podemos conferir se existem erros em cada uma das linhas modificadas.
+
+2-Como o fato de ter fácil acesso a todo o histórico de um arquivo pode torná-lo um programador melhor ao longo do tempo ?
+O fato de poder saber a qualquer momento quais as mudanças que foram feitas em cada arquivo pode trazer um rendimento 
+maior no desenvolvimento do projeto, visto que podemos reduzir muito
+o tempo de busca dos bugs inseridos.
+
+3-O commit manual tem a desvantagem  de deixar na mão do programador escolher quando o arquivo deverá ser salvo. 
+Ele poderá salvar versões demais ou até mesmo esquecer de salvar o arquivo.
+
+4-Porque alguns sistemas de controle de versão permitem salvar vários arquivos, ao invés de salvar os arquivos
+separadamente ?
+Porque às vezes alguns arquivos possuem referências ou dependências de outros arquivos que estão no projeto. dessa forma
+ao realizar um commit é melhor que todos os arquivos sejam salvos.
+
+5-Como utilizar os comandos git log e git diff para visualizar o histórico dos arquivos do projeto ?
+Primeiro utilizar o comando 'git log' para ver o histórico de alterações do projeto. no log de alterações, selecione os codigos
+dos dois commits que deseja comparar. Utilize o comando 'git diff ' seguido dos codigos dos logs desejados.
+
+6-De que forma o controle de versão proporciona mais segurança ao fazer alterações que podem danificar algo ?
+O controle de versão permite que as alterações possam ser rastreadas e que sempre podemos voltar ao estado anterior às modificações.
