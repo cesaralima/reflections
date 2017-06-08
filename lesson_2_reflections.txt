@@ -1,3 +1,18 @@
 1-Por que é preciso inicializar o repositório ? O que acontece nele ?
 É preciso iniciar o repositório para que os arquivos que estão nele tenham seus históricos controlados e seja possível 
 rastreá-los. Ao iniciar o repositório, uma pasta oculta é criada com os metadados do histórico dos arquivos e copias deles.
+
+2-Qual a diferença entre a área de preparação, o diretório de trabalho e o repositório. Qual o valor que ela oferece ?
+A área de preparação é um local intermediário em que os arquivos são adicionados antes de ser permanentemente copiados
+para a nova versão (commit). Sua vantagem é permitir que selecionemos quais arquivos devem ser rastreados (controlados) juntos
+durante os commits.
+
+3-Resumo do comando DIFF:
+
+>> DIFF (sem argumentos) = compara o diretorio de trabalho com a área de preparação, considerando
+	que ela é uma cópia do ultimo commit realizado.(se não houver arquivos adicionados)
+	
+>> DIFF --STAGED = compara a área de preparação com o ultimo commit realizado no repositório
+
+>> DIFF COMMIT1 COMMIT2 = compara dois commits confirmados no repositório, considera o primeiro como original e o segundo
+							como cópia.
