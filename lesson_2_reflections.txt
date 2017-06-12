@@ -4,10 +4,25 @@ rastreá-los. Ao iniciar o repositório, uma pasta oculta é criada com os metad
 
 2-Qual a diferença entre a área de preparação, o diretório de trabalho e o repositório. Qual o valor que ela oferece ?
 A área de preparação é um local intermediário em que os arquivos são adicionados antes de ser permanentemente copiados
-para a nova versão (commit). Sua vantagem é permitir que selecionemos quais arquivos devem ser rastreados (controlados) juntos
-durante os commits.
+para a nova versão (commit). Sua vantagem é permitir que selecionemos quais arquivos devem adicionados aos commits.
 
-3-Resumo do comando DIFF:
+3- Comandos aprendidos até aqui:
+>> git clone : serve para fazer uma cópia de um repositório para a maquina local. usa como arqumentos a URL do rapositório 
+				de origem.
+>> git log : serve para mostrar todas as mensagens de log que foram gravadas em cada uma das versões do repositório.
+
+>> git diff : seve para comparar o conteúdo dos arquivos de duas versões e indicar quais foram as modificações.
+
+>> git status : serve para informar o status do repositório atual, se possui arquivos gravados, se possui versões e se possui
+				arquivos pendentes na área de preparação.
+				
+>> git checkout : serve para trazer ao diretório de trabalho uma determinada versão do projeto com todos os arquivos
+					no estado em que estavam na hora do commit. usa como parâmetro o código de ID da versão desejada.
+					
+>> git add : serve para adicionar arquivos do diretório de trabalho para a área de preparação, onde serão incluídos no
+			próximo commit. usa como argumentos o nome do arquivo desejado. só pode adicionar um arquivo de cada vez.
+
+4-Resumo do comando DIFF:
 
 >> DIFF (sem argumentos) = compara o diretorio de trabalho com a área de preparação, considerando
 	que ela é uma cópia do ultimo commit realizado.(se não houver arquivos adicionados)
@@ -16,3 +31,22 @@ durante os commits.
 
 >> DIFF COMMIT1 COMMIT2 = compara dois commits confirmados no repositório, considera o primeiro como original e o segundo
 							como cópia.
+							
+							
+5- Comando Branch : ele serve pára criar versões alternativas dos arquivos, sem alteração da versão principal (master).
+o comando BRANCH sem argumentos mostra todos os branches (versões alternativas) existem, e qual está em uso no diretorio 
+de trabalho. Para criar uma nova versão alternativa( branch) adicionar como argumento o nome do branch.
+
+6- o branch pode ser util para criar novas versões alternativas e concorrentes, ou versões de teste que não são oficiais,
+para testar um novo recurso, por exemplo.
+
+
+7-para ver o histórico de commits de todas as versões, incluindo a versão master, usamos o comando 
+		git log --graph --oneline <nome do commit1> <nome do commit 2>
+		
+8- os diagramas de histórico servem para entendermos melhor a sequencia de evoluções e divisõe dos branches existentes 
+no projeto.
+		
+9- O comando MERGE faz uma usao entre dois branches diferentes, de forma que são aplicadas todas as alterações de todos os
+commits realizados nas dois branches.
+
