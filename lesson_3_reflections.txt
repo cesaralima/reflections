@@ -1,0 +1,11 @@
+1-Novo comando aprendido:
+git remote
+git remote add origin <url> : informa ao repositório local que ele representa um repositório remoto, cuja origem está especificado na url
+git remote -v : visualiza a url do repositorio remoto de origem
+
+2-Novo comando aprendido:
+git push origin master: informa ao Git que deve publicar as atualizações do repositorio local no repositorio de origem, 
+                        e que deve publicar o branch master.
+                        
+3- Quando deve-se usar um repositorio remoto em vez de um repositorio local ?
+Quando o trabalho deve ser compartilhado entre outros colaboradores.
