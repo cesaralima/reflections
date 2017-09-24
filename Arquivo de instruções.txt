@@ -1,0 +1,1 @@
+Este arquivo contém instruções para instalar o sistema raspbian na placa RaspberryPi;
